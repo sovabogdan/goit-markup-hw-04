@@ -153,8 +153,10 @@ li {
 
 /*Hero*/
 .hero {
+  max-width: 1600px;
   background-color: var(--secondary-bg-color);
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -328,7 +330,7 @@ li {
   fill: var(--tertiary-text-color);
 }
 /*Clients*/
-.clients {
+.client-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -337,12 +339,36 @@ li {
   color: var(--secondary-text-color);
   margin-bottom: 50px;
 }
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /*Footer*/
 .footer {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer .logo {
@@ -371,6 +397,31 @@ li {
 .footer-list li:not(:last-child) {
   padding-bottom: 9px;
 }
+.join-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--tertiary-text-color);
+
+  margin-bottom: 20px;
+}
+.footer-container {
+  width: 231px;
+  margin: 0;
+  padding-right: 0;
+}
+.join-container {
+  margin-left: 70px;
+}
+.join-link {
+  background-color: #44454e;
+}
+.join-icon {
+  fill: var(--tertiary-text-color);
+}
+
 /*Portfolio page*/
 
 /*buttons*/
@@ -408,6 +459,8 @@ li {
 .filter:hover {
   background-color: var(--accent-color);
   color: var(--tertiary-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .exmpls {
@@ -443,4 +496,13 @@ li {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.project {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+}
+.project:hover,
+:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
