@@ -277,6 +277,7 @@ li {
   margin-right: 30px;
 }
 .team-list .teammate {
+  background-color: var(--tertiary-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -329,6 +330,7 @@ li {
 .teammate-social-link:focus .teammate-social-icon {
   fill: var(--tertiary-text-color);
 }
+
 /*Clients*/
 .client-title {
   font-weight: bold;
@@ -368,7 +370,6 @@ li {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
 }
 
 .footer .logo {
@@ -386,6 +387,9 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--tertiary-text-color);
+}
+.map-link {
   color: var(--tertiary-text-color);
 }
 .footer-contacts {
@@ -408,9 +412,7 @@ li {
   margin-bottom: 20px;
 }
 .footer-container {
-  width: 231px;
-  margin: 0;
-  padding-right: 0;
+  display: flex;
 }
 .join-container {
   margin-left: 70px;
@@ -502,7 +504,7 @@ li {
   border: 1px solid #eeeeee;
 }
 .project:hover,
-:focus {
+.project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
