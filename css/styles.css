@@ -226,15 +226,19 @@ li {
   margin-bottom: 10px;
 }
 .icon-box {
+  display: flex;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--tertiary-bg-color);
+}
+.icon-features {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  align-self: center;
 }
 /*Work*/
 .work,
